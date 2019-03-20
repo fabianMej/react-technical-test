@@ -1,0 +1,23 @@
+.card-center {
+    width: 50%;
+    text-align: center;
+}
+
+.card-header{
+    background-color: #0b2f5e;
+    color: #fff;
+}
+
+.offers {
+    margin-top: 15px;
+}
+
+.freeOffer {
+    background-color: #9aca40;
+    color: #0B4210;
+}
+
+.reserve {
+    background-color: #b2ebf2;
+    color: #0b2f5e;
+}
