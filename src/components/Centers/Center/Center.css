@@ -1,15 +1,34 @@
-.card-center {
-    width: 50%;
-    text-align: center;
+section {
+    padding: 15px;
 }
 
-.card-header{
+p {
+    font-size: 14px;
+}
+
+.card-center {
+    text-align: center;
+    width: 50%;
+}
+
+.header{
     background-color: #0b2f5e;
     color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header > p {
+    margin-left: 20%;
 }
 
 .offers {
-    margin-top: 15px;
+    margin-top: 15px;    
+    left: 35%;
+}
+
+.offers > div {
+    margin-left: 30%;
 }
 
 .freeOffer {
@@ -20,4 +39,18 @@
 .reserve {
     background-color: #b2ebf2;
     color: #0b2f5e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10%
+}
+
+
+.circle-avatar {
+    border-radius: 50%;
+}
+
+.circle-div {
+    position: absolute;
+    left: 40%;
+    transform: translateY(-50%) translateX(-50%);
 }
