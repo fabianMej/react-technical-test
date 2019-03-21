@@ -35,7 +35,7 @@ const center: React.SFC<Props> = (props) => {
                     <p><strong>$15.50</strong> PER HOUR FIRST CHILD</p>
                 </div>
                 <div className="col-md-4 align-self-center">
-                    <Button clicked={() => {}} text="RESERVE NOW"></Button>
+                    <Button clicked={() => alert(`${props.centerModel.name} RESERVED`)} text="RESERVE NOW"></Button>
                 </div>
             </section>
         </div>
