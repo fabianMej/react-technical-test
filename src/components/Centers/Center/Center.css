@@ -8,7 +8,8 @@ p {
 
 .card-center {
     text-align: center;
-    width: 50%;
+    background-color: #fff;
+    margin-bottom: 5%;
 }
 
 .header{
@@ -18,17 +19,13 @@ p {
     padding-bottom: 10px;
 }
 
-.header > p {
-    margin-left: 20%;
+.image-profile {
+    width: 100px;
+    height: 100px;
 }
 
 .offers {
-    margin-top: 15px;    
-    left: 35%;
-}
-
-.offers > div {
-    margin-left: 30%;
+    margin-top: 15px; 
 }
 
 .freeOffer {
@@ -36,21 +33,24 @@ p {
     color: #0B4210;
 }
 
+.fill-heart { 
+    color: #f44336;
+}
+
+.fa-heart {
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .reserve {
     background-color: #b2ebf2;
     color: #0b2f5e;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 10%
+    margin-top: 2%
 }
 
-
-.circle-avatar {
-    border-radius: 50%;
-}
-
-.circle-div {
-    position: absolute;
-    left: 40%;
-    transform: translateY(-50%) translateX(-50%);
+.price {
+    margin-bottom: 0px;
 }

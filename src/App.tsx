@@ -6,8 +6,10 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <div className="row justify-content-center">
-          <Centers></Centers>
+        <div className="row">
+          <div className="col">
+            <Centers></Centers>
+          </div>
         </div>
       </div>
     );

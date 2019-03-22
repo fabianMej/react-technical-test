@@ -20,9 +20,10 @@ class Centers extends Component<Props, State> {
     }
 
     componentDidMount() {
-        axios.get('5c9313af320000d9636bd199')
+        axios.get('5c94772c3100004168554921')
             .then(response => {
                 const centers = [];
+                centers.push(response.data);
                 centers.push(response.data);
                 this.setState({centers, errors: false});
             })
