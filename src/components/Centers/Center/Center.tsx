@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../UI/Button/Button';
-import Rating from './Rating/Rating';
+import Rating from './../../UI/Rating/Rating';
 import { CenterModel } from '../../../models/CenterModel';
 import './Center.css';
 
@@ -15,7 +15,7 @@ const center: React.SFC<Props> = (props) => {
             <div className="row">
                 <div className="col-3">
                     <img src={props.centerModel.profilePicture.url} className="image-profile img-fluid"/>
-                </div>
+                </div>  
                 <div className="header col-9">
                     <h4>{props.centerModel.name}</h4>
                     <p>{props.centerModel.description}</p>
@@ -34,7 +34,9 @@ const center: React.SFC<Props> = (props) => {
                     </div>
                 </div>
                 <div className="text-center">
-                    <p>Pre paid Reservations Only</p>
+                    { props.centerModel.paymentTypes.map((payment, index) => {
+                        return <span className="mr-4" key={index}>&#9679; {payment}</span>
+                    }) }
                 </div>
                     <div className="row justify-content-center">
                         <p>{props.centerModel.totalReviews} REVIEWS</p>
@@ -43,7 +45,7 @@ const center: React.SFC<Props> = (props) => {
                 </div>
                 <section className="reserve row justify-content-between align-items-center">
                     <div>
-                        <p className="price"><strong>$15.50</strong> PER HOUR FIRST CHILD</p>
+                        <p className="price"><strong>$ {props.centerModel.price}</strong> PER HOUR FIRST CHILD</p>
                     </div>
                     <div>
                         <Button clicked={() => alert(`${props.centerModel.name} RESERVED`)} text="RESERVE NOW"></Button>

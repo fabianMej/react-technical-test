@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Dispatch } from 'react';
 import './App.css';
 import Centers from './components/Centers/Centers';
 

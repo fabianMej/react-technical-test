@@ -5,6 +5,7 @@ export interface CenterModel {
     zipCode: string;
     totalReviews: number;
     rating: number;
+    kidsLimitsYears: string;
     location: {
         latitude: number,
         longitude: Number
@@ -24,8 +25,9 @@ export interface CenterModel {
         startHour: number,
         endHour: number
     }>;
-    paymentType: string,
-    profileDescription: string,
+    paymentTypes: Array<string>;
+    price: number;
+    profileDescription: string;
     spacePictures: Array<{
         url: string
     }>;
